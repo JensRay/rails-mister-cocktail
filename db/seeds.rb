@@ -9,3 +9,11 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+
+Cocktail.create(name: "blue Mary")
+Cocktail.create(name: "bloody Mary")
+Cocktail.create(name: "black Mary")
+
+Dose.create(description: "10ml")
+Dose.create(description: "20ml")
+Dose.create(description: "30ml")

@@ -1,0 +1,19 @@
+
+<h1>Cocktails</h1>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <% @cocktails.each do |c| %>
+  <tbody>
+    <tr>
+      <td scope="row"><%= c.id %></td>
+      <td><%= c.name %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
