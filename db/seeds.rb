@@ -9,10 +9,20 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "rum")
+Ingredient.create(name: "whiskey")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "bourbon")
+Ingredient.create(name: "gin")
+Ingredient.create(name: "orange juice")
 
-Cocktail.create(name: "blue Mary")
-Cocktail.create(name: "bloody Mary")
-Cocktail.create(name: "black Mary")
+Cocktail.create(name: "Old Fashioned")
+Cocktail.create(name: "Bloody Mary")
+Cocktail.create(name: "Whiskey Sour")
+Cocktail.create(name: "Dry Martini")
+Cocktail.create(name: "Margarita")
+Cocktail.create(name: "Mojito")
+
 
 # Dose.create(description: "10ml")
 # Dose.create(description: "20ml")
