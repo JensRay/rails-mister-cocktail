@@ -99,17 +99,17 @@ require 'open-uri'
 
 # puts "Ingredients created"
 
-no_of_cocktails = Cocktail.count
-count = 1
-100.times do
-  Review.create(rating: rand(4..5), cocktail_id: rand(1..no_of_cocktails))
-  puts "#{count} reviews created"
-  count += 1
-end
+# no_of_cocktails = Cocktail.count
+# count = 1
+# 100.times do
+#   Review.create(rating: rand(4..5), cocktail_id: rand(1..no_of_cocktails))
+#   puts "#{count} reviews created"
+#   count += 1
+# end
 
-count = 1
-15.times do
-  Review.create(rating: rand(1..3), cocktail_id: rand(1..no_of_cocktails))
-  puts "#{count} reviews created"
-  count += 1
-end
+# count = 1
+# 15.times do
+#   Review.create(rating: rand(1..3), cocktail_id: rand(1..no_of_cocktails))
+#   puts "#{count} reviews created"
+#   count += 1
+# end
