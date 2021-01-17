@@ -9,23 +9,26 @@
             <div class="text-warning">
               <% count = 0 %>
               <% review_number = 0.0 %>
-              <% cocktail.reviews.each do |review| %>
-                <% review_number += review.rating %>
-                <% count += 1 %>
+              <% unless cocktail.reviews.empty? %>
+                <% cocktail.reviews.each do |review| %>
+                  <% review_number += review.rating %>
+                  <% count += 1 %>
+                <% end %>
+                <!-- counting rounder for full stars and not rounded for half stars -->
+                <%= not_rounded = (review_number / count).round(2) %>
+                <% not_rounded = (not_rounded * 2).round / 2.0 %>
+                <% full_stars = not_rounded.floor  %>
+                <% full_stars.times do %>
+                  <i class="fas fa-star "></i>
+                <% end %>
+                <% if not_rounded - full_stars == 0.5 %>
+                  <i class="fas fa-star-half-alt"></i>
+                <% end %>
+                <% (5 - not_rounded.ceil).times do %>
+                  <i class="far fa-star"></i>
+                <% end %>
               <% end %>
-              <!-- counting rounder for full stars and not rounded for half stars -->
-              <%= not_rounded = (review_number / count).round(2) %>
-              <% not_rounded = (not_rounded * 2).round / 2.0 %>
-              <% full_stars = not_rounded.floor  %>
-              <% full_stars.times do %>
-                <i class="fas fa-star "></i>
-              <% end %>
-              <% if not_rounded - full_stars == 0.5 %>
-                <i class="fas fa-star-half-alt"></i>
-              <% end %>
-              <% (5 - not_rounded.ceil).times do %>
-                <i class="far fa-star"></i>
-              <% end %>
+
             </div>
           </div>
         </div>
