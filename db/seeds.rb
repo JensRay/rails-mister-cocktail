@@ -14,9 +14,9 @@ puts "Deleting ingredients..."
 Ingredient.destroy_all
 puts "Ingredients deleted"
 
-# puts "Deleting cocktails..."
-# Cocktail.destroy_all
-# puts "Cocktails deleted"
+puts "Deleting cocktails..."
+Cocktail.destroy_all
+puts "Cocktails deleted"
 
 puts "Creating ingredients"
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
