@@ -1,5 +1,7 @@
+<div class="card-category">
+  <h1>Cocktails</h1>
+</div>
 
-<h1>Cocktails</h1>
 
 <table class="table table-dark">
   <thead>
@@ -12,7 +14,7 @@
   <tbody>
     <tr>
       <td scope="row"><%= c.id %></td>
-      <td><%= c.name %></td>
+      <td> <%= link_to c.name, cocktail %> </td>
     </tr>
   </tbody>
   <% end %>

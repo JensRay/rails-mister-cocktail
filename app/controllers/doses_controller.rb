@@ -16,7 +16,7 @@ class DosesController < ApplicationController
     else
       @dose.save
       # @dose = Dose.new(dose_params)
-      render new_cocktail_dose_path
+      render cocktail_doses_path
     end
   end
 
