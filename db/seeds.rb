@@ -10,9 +10,9 @@
 require 'json'
 require 'open-uri'
 
-puts "Deleting ingredients..."
-Ingredient.destroy_all
-puts "Ingredients deleted"
+# puts "Deleting ingredients..."
+# Ingredient.destroy_all
+# puts "Ingredients deleted"
 
 puts "Deleting cocktails..."
 Cocktail.destroy_all
