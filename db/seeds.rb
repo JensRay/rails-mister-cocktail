@@ -101,18 +101,19 @@ require 'open-uri'
 
 # puts "Ingredients created"
 
-
+first = Cocktail.first.id
+last = Cocktail.last.id
 
 count = 1
 100.times do
-  Review.create(rating: rand(4..5), cocktail_id: rand(Cocktail.first..Cocktail.last))
+  Review.create(rating: rand(4..5), cocktail_id: rand(first..last))
   puts "#{count} reviews created"
   count += 1
 end
 
 count = 1
 15.times do
-  Review.create(rating: rand(1..3), cocktail_id: rand(Cocktail.first..Cocktail.last))
+  Review.create(rating: rand(1..3), cocktail_id: rand(first..last))
   puts "#{count} reviews created"
   count += 1
 end
