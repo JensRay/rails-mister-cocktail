@@ -1,24 +1,22 @@
-# README
+# Mister Cocktail
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A website with cocktail recipes
 
-Things you may want to cover:
+https://mister-cocktail-jensray.herokuapp.com/
 
-* Ruby version
+A Rails app built by *Jedrzej Lagodzinski*.
 
-* System dependencies
+## Functionality:
+- adding new cocktails
+- searching recipes and ingredients
+- adding ingredients and changing doses
+- rating
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Technologies:
+- Ruby on Rails (6.0.3.4)
+- Bootstrap 5
+- CSS
+- HTML
+- Heroku
+- SASS
+- Cloudinary
